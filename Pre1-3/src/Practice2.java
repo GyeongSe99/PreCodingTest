@@ -41,8 +41,38 @@ public class Practice2 {
         return answer;
     }
 
+
     public static void main(String[] args) {
         Practice2 sol = new Practice2();
         sol.solution("({)}");
+    }
+}
+
+// 차현님 코드
+// 여는 괄호와 닫는 괄호는 전부 1 또는 2만 차이난다.
+class Solution {
+    boolean check(char a) {
+        if (a == '(' || a == '{' || a == '[' || a == '<') {
+            return true;
+        }
+        return false;
+    }
+
+    public int solution(String S) {
+        Stack<Character> st = new Stack<>();
+        char[] arr = S.toCharArray();
+        for (char c : arr) {
+            if (check(c)) {
+                st.push(c);
+            } else {
+                if (!st.isEmpty()) {
+                    if (c - st.peek() == 1 || c - st.peek() == 2) {
+                        st.pop();
+                    } else return 0;
+                }
+            }
+        }
+        if (st.isEmpty()) return 1;
+        return 0;
     }
 }

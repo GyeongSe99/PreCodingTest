@@ -1,6 +1,5 @@
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+
 
 public class Practice5 {
     public String solution(String[] bj, String[] one, String[] two) {
@@ -28,7 +27,6 @@ public class Practice5 {
         }
 
         answer = String.format("%d만원(%s)", totalPrize, bjSet.get(0));
-        System.out.println(answer);
 
         return answer;
     }

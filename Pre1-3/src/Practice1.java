@@ -27,7 +27,6 @@ public class Practice1 {
             sb.append(result.pollFirst());
         }
 
-
         return sb.toString();
     }
 
