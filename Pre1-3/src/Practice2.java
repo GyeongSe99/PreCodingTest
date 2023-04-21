@@ -48,7 +48,6 @@ public class Practice2 {
     }
 }
 
-// 차현님 코드
 // 여는 괄호와 닫는 괄호는 전부 1 또는 2만 차이난다.
 class Solution {
     boolean check(char a) {
