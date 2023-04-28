@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Pracitce3 {
+public class Practice3 {
     public boolean solution(String p, String s) {
         boolean answer = true;
         String[] pArr = p.split("");
@@ -35,7 +35,7 @@ public class Pracitce3 {
     }
 
     public static void main(String[] args) {
-        Pracitce3 sol = new Pracitce3();
+        Practice3 sol = new Practice3();
         System.out.println(sol.solution("갸가갸가", "금 은 철 은"));
     }
 }
