@@ -12,5 +12,4 @@ public class Practice4 {
         Practice4  sol = new Practice4();
         sol.solution(1000000);
     }
-
 }

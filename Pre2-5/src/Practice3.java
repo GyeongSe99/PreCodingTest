@@ -3,7 +3,6 @@ import java.util.PriorityQueue;
 
 public class Practice3 {
     public int solution(int[] cards) {
-        int answer = 0;
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         for (int i = 0; i < cards.length; i++) {
             pq.add(cards[i]);
