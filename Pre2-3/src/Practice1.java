@@ -64,9 +64,12 @@ public class Practice1 {
         PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>((x, y) -> y.getValue() == x.getValue() ?
                 x.getKey() - y.getKey() : y.getValue() - x.getValue());
 
+
         for (Map.Entry<Integer, Integer> item : hm.entrySet()) {
             pq.add(item);
         }
+
+        System.out.println(pq);
 
         StringBuffer sb = new StringBuffer();
         while (!pq.isEmpty()) {
@@ -81,7 +84,6 @@ public class Practice1 {
 
     public static void main(String[] args) {
         Practice1 sol = new Practice1();
-        sol.solution("221123");
         sol.solution2("221123");
     }
 }
