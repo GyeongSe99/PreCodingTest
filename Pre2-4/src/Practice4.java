@@ -6,8 +6,10 @@ public class Practice4 {
         for (int i = 0; i < nums.length; i++) {
             table[nums[i]]++;
         }
+
         for (int i = 0; i < table.length; i++) {
             if (table[i] >= 2) {
+                // 조합 공식
                 answer += (table[i] * (table[i] - 1)) / 2;
             }
         }
