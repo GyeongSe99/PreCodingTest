@@ -20,7 +20,7 @@ public class Practice5 {
             }
         }
 
-        for (int i=0;i<size;i++){
+        for (int i = 0; i < size; i++){
             result = max(result, dp.get(i));
         }
 
