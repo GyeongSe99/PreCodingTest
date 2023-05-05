@@ -7,7 +7,7 @@ public class Practice5 {
         int size = fruits.length;
         ArrayList<Integer> dp = new ArrayList<>();
 
-        for (int i=0; i < size; i++){
+        for (int i = 0; i < size; i++){
             if (i == 0) {
                 dp.add(i, fruits[i]);
                 continue;
