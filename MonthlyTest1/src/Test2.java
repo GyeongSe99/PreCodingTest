@@ -9,18 +9,18 @@ public class Test2 {
         return result.get(0);
     }
 
-    public void dfs(int level, int sum, int n, int m, int weight, int[] sweetness, int[] weights, ArrayList<Integer> result) {
+    public void dfs(int idx, int sum, int n, int m, int weight, int[] sweetness, int[] weights, ArrayList<Integer> result) {
         if (sum == m) {
             result.add(weight);
         } else if (sum > m) {
             return;
         }
-        if (level == sweetness.length - 1) {
+        if (idx == sweetness.length - 1) {
             return;
         }
 
-        dfs(level++, sum + sweetness[level], n, m, weight + weights[level], sweetness, weights, result);
-        dfs(level++, sum, n, m, weight, sweetness, weights, result);
+        dfs(idx++, sum + sweetness[idx], n, m, weight + weights[idx], sweetness, weights, result);
+        dfs(idx++, sum, n, m, weight, sweetness, weights, result);
     }
 
     public static void main(String[] args) {
